@@ -1,0 +1,68 @@
+*vital-data-closure.txt*	Provide Closure object.
+
+Maintainer: thinca <thinca+vim@gmail.com>
+
+==============================================================================
+CONTENTS				*Vital.Data.Closure-contents*
+
+INTRODUCTION			|Vital.Data.Closure-introduction|
+INTERFACE			|Vital.Data.Closure-interface|
+  FUNCTIONS			  |Vital.Data.Closure-functions|
+
+
+
+==============================================================================
+INTRODUCTION				*Vital.Data.Closure-introduction*
+
+*Vital.Data.Closure* provides Closure object.
+>
+<
+
+
+==============================================================================
+INTERFACE				*Vital.Data.Closure-interface*
+
+------------------------------------------------------------------------------
+FUNCTIONS				*Vital.Data.Closure-functions*
+
+					*Vital.Data.Closure.build()*
+build({callable} [, {arglist}][, {context}])
+
+					*Vital.Data.Closure.call()*
+call({callable} [, {arglist}][, {context}])
+
+					*Vital.Data.Closure.new()*
+new({funcref} [, {arglist}][, {context}])
+
+from_expr({expr} [, {binding}])		*Vital.Data.Closure.from_expr()*
+
+from_command({command} [, {binding}])	*Vital.Data.Closure.from_command()*
+
+from_operator({operator})		*Vital.Data.Closure.from_operator()*
+
+					*Vital.Data.Closure.compose()*
+compose({callable}...)
+
+is_closure({expr})			*Vital.Data.Closure.is_closure()*
+
+
+
+==============================================================================
+OBJECTS					*Vital.Data.Closure-objects*
+
+------------------------------------------------------------------------------
+Closure Object			*Vital.Data.Closure-Closure*
+
+Closure.call({args}...)		*Vital.Data.Closure-Closure.call()*
+Closure.apply({arglist})	*Vital.Data.Closure-Closure.apply()*
+Closure.with_args({args}...)	*Vital.Data.Closure-Closure.with_args()*
+Closure.with_arglist({arglist})	*Vital.Data.Closure-Closure.with_arglist()*
+Closure.with_context({context})	*Vital.Data.Closure-Closure.with_context()*
+Closure.compose({callable})	*Vital.Data.Closure-Closure.compose()*
+Closure.to_function()		*Vital.Data.Closure-Closure.apply()*
+Closure.sweep_function()	*Vital.Data.Closure-Closure.sweep_function()*
+
+
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
